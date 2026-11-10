@@ -1,0 +1,57 @@
+# Faster Washing & Reduced Soap Consumption [B42]
+
+**El apocalipsis ya es suficientemente malo. No necesitas pasarte medio día lavando tus pantaletas.**
+
+Este mod te permite controlar por completo los tiempos de lavado y el consumo del jabón. Haz que lavar sea más rápido, consigue que el jabón dure más, o conserva la experiencia vanilla para aquello que NO quieres modificar.
+
+## QUÉ HACE ESTE MOD
+
+**Lavado de ropa más rápido**
+
+Reduce el tiempo necesario para lavar tu ropa. Porque pasarte una eternidad frotando sangre de tu ropa no es precisamente el plan de supervivencia de todo el mundo.
+
+**Lavado personal más rápido**
+
+Ajusta el tiempo que tu personaje dedica a lavarse. Especialmente útil si tiene el rasgo Hemofóbico.
+
+**Menor consumo de jabón**
+
+El jabón deja de ser ese objeto que ignoras automáticamente porque ocupa espacio en el inventario. Recógelo, llévalo en tus viajes y asegúrate de que no se te caiga.
+
+Aplica estos cambios tanto para la barra de jabón como para la botella de limpiador líquido. Configura el consumo de cada tipo de jabón a la medida que prefieras.
+
+
+## YOUR APOCALYPSE, YOUR RULES.
+
+Cada ajuste es independiente y completamente configurable desde las opciones del Sandbox.
+
+¿Quieres lavar más rápido, pero mantener el consumo de jabón vanilla? Hecho.
+
+¿Quieres ahorrar jabón, pero conservar los tiempos de lavado originales? Por supuesto.
+
+¿Quieres que el lavado tarde el doble que en vanilla porque aparentemente disfrutas sufriendo? También puedes hacerlo.
+
+Modifica cada multiplicador individualmente y configura la experiencia de lavado que realmente quieres.
+
+## VALORES PREDETERMINADOS
+
+| Ajuste | Valor predeterminado |
+|---|---:|
+| Tiempo de lavado de ropa | 0.5x | 
+| Tiempo de lavado personal | 0.5x | 
+| Consumo de jabón sólido | 0.2x |  
+| Consumo de limpiador líquido | 0.02x | 
+
+TODOS los valores SE PUEDEN MODIFICAR desde el menú de Sandbox Options
+
+## LIGERO POR DISEÑO
+
+- No añade nuevos objetos, recetas ni sistemas de fabricación.
+- No necesita dependencias adicionales.
+- Se centra en las mecánicas de lavado existentes en el juego vanilla.
+- Aplica los multiplicadores de duración en Lua compartido entre cliente y servidor para sincronizar el multijugador.
+- Diseñado para Project Zomboid Build 42.21.
+
+**Recoge el jabón. Ahorra suministros. Pasa menos tiempo frotando y más tiempo sobreviviendo.**
+
+**Creado por Chapin.**

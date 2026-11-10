@@ -1,0 +1,11 @@
+{
+  "Sandbox_FasterWashingReducedSoap": "Faster Washing & Reduced Soap Consumption [B42]",
+  "Sandbox_FasterWashingReducedSoap_ClothingWashTimeMultiplier": "Multiplicador del tiempo de lavado de ropa",
+  "Sandbox_FasterWashingReducedSoap_ClothingWashTimeMultiplier_tooltip": "Multiplica la duración del lavado de prendas de ropa. 0.5 = mitad de tiempo; 1.0 = tiempo normal (vanilla); 2.0 = doble de tiempo. No modifica el consumo de agua ni de jabón.",
+  "Sandbox_FasterWashingReducedSoap_MyselfWashTimeMultiplier": "Multiplicador del tiempo de lavado personal",
+  "Sandbox_FasterWashingReducedSoap_MyselfWashTimeMultiplier_tooltip": "Multiplica la duración del lavado del personaje. 0.5 = mitad de tiempo; 1.0 = tiempo normal (vanilla); 2.0 = doble de tiempo. No modifica el consumo de agua ni de jabón.",
+  "Sandbox_FasterWashingReducedSoap_SoapConsumptionMultiplier": "Multiplicador del consumo de jabón",
+  "Sandbox_FasterWashingReducedSoap_SoapConsumptionMultiplier_tooltip": "Multiplica el consumo de jabón sólido. 0.2 = consume un 20 %% de lo normal y permite que el jabón dure aproximadamente 5 veces más; 1.0 = consumo normal (vanilla).",
+  "Sandbox_FasterWashingReducedSoap_CleaningLiquidConsumptionMultiplier": "Multiplicador del consumo de limpiador líquido",
+  "Sandbox_FasterWashingReducedSoap_CleaningLiquidConsumptionMultiplier_tooltip": "Multiplica el consumo de CleaningLiquid al lavar ropa. 0.02 = consume un 2 %% de lo normal; 1.0 = consumo normal (vanilla)."
+}

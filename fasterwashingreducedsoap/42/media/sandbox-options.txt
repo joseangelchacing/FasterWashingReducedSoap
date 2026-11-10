@@ -1,0 +1,41 @@
+VERSION = 1,
+
+option FasterWashingReducedSoap.ClothingWashTimeMultiplier
+{
+    type = double,
+    min = 0.1,
+    max = 2.0,
+    default = 0.5,
+    page = FasterWashingReducedSoap,
+    translation = FasterWashingReducedSoap_ClothingWashTimeMultiplier,
+}
+
+option FasterWashingReducedSoap.MyselfWashTimeMultiplier
+{
+    type = double,
+    min = 0.1,
+    max = 2.0,
+    default = 0.5,
+    page = FasterWashingReducedSoap,
+    translation = FasterWashingReducedSoap_MyselfWashTimeMultiplier,
+}
+
+option FasterWashingReducedSoap.SoapConsumptionMultiplier
+{
+    type = double,
+    min = 0.01,
+    max = 1.0,
+    default = 0.2,
+    page = FasterWashingReducedSoap,
+    translation = FasterWashingReducedSoap_SoapConsumptionMultiplier,
+}
+
+option FasterWashingReducedSoap.CleaningLiquidConsumptionMultiplier
+{
+    type = double,
+    min = 0.01,
+    max = 1.0,
+    default = 0.02,
+    page = FasterWashingReducedSoap,
+    translation = FasterWashingReducedSoap_CleaningLiquidConsumptionMultiplier,
+}

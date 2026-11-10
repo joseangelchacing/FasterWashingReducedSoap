@@ -1,0 +1,56 @@
+# Faster Washing & Reduced Soap Consumption [B42]
+
+**The apocalypse is bad enough. You don't need to spend half your day washing your panties.**
+
+This mod gives you full control over washing times and soap consumption. Make washing faster, make your soap last longer, or keep the vanilla experience for anything you DON'T want to change.
+
+## WHAT DOES THIS MOD DO?
+
+**Faster Clothing Washing**
+
+Reduce the time required to wash your clothes. Because spending an eternity scrubbing blood out of your clothes isn't exactly everyone's idea of a survival plan.
+
+**Faster Personal Washing**
+
+Adjust the time your character spends washing themselves. Especially useful if they have the Hemophobic trait.
+
+**Reduced Soap Consumption**
+
+Soap is no longer that item you automatically ignore because it takes up valuable inventory space. Pick it up, take it along on your travels, and make sure you don't drop it.
+
+These changes apply to both solid soap bars and liquid cleaner bottles. Adjust the consumption of each type of soap to suit your preferences.
+
+## YOUR APOCALYPSE, YOUR RULES.
+
+Each setting is independent and fully configurable through Sandbox Options.
+
+Want to wash faster but keep vanilla soap consumption? Done.
+
+Want to save soap but keep the original washing times? Absolutely.
+
+Want washing to take twice as long as vanilla because apparently you enjoy suffering? You can do that too.
+
+Adjust each multiplier individually and create the washing experience you actually want.
+
+## DEFAULT SETTINGS
+
+| Setting                    | Default value |
+| -------------------------- | ------------: |
+| Clothing washing time      |          0.5x |
+| Personal washing time      |          0.5x |
+| Solid soap consumption     |          0.2x |
+| Liquid cleaner consumption |         0.02x (Trust me, I asked my mom.) |
+
+ALL values CAN BE CHANGED through the Sandbox Options menu.
+
+## LIGHTWEIGHT BY DESIGN
+
+- Adds no new items, recipes, or crafting systems.
+- Requires no additional dependencies.
+- Focuses on existing vanilla washing mechanics.
+- Applies washing-duration multipliers in shared client/server Lua for multiplayer synchronization.
+- Designed for Project Zomboid Build 42.22.2.
+
+**Pick up the soap. Save your supplies. Spend less time scrubbing and more time surviving.**
+
+**Created by Chapin.**

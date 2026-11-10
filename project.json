@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/escapepz/pzstudio/refs/heads/42.20.0/pzstudio.schema.json",
+    "workshop": {
+        "title": "Faster Washing Reduced & Soap - Pick It Up",
+        "visibility": "unlisted",
+        "tags": [
+            "Build 42"
+        ]
+    },
+    "mods": {
+        "fasterwashingreducedsoap": {
+            "name": "Faster Washing Reduced & Soap - Pick It Up",
+            "description": ""
+        }
+    },
+    "excludes": []
+}
