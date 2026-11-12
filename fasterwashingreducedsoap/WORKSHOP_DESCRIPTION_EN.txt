@@ -38,7 +38,7 @@ Adjust each multiplier individually and create the washing experience you actual
 | -------------------------- | ------------: |
 | Clothing washing time      |          0.5x |
 | Personal washing time      |          0.5x |
-| Solid soap consumption     |          0.2x |
+| Solid soap consumption     |         0.02x |
 | Liquid cleaner consumption |         0.02x (Trust me, I asked my mom.) |
 
 ALL values CAN BE CHANGED through the Sandbox Options menu.
@@ -48,7 +48,7 @@ ALL values CAN BE CHANGED through the Sandbox Options menu.
 - Adds no new items, recipes, or crafting systems.
 - Requires no additional dependencies.
 - Focuses on existing vanilla washing mechanics.
-- Applies washing-duration multipliers in shared client/server Lua for multiplayer synchronization.
+- Applies washing-duration and soap-consumption logic in shared client/server Lua for multiplayer consistency.
 - Designed for Project Zomboid Build 42.22.2.
 
 **Pick up the soap. Save your supplies. Spend less time scrubbing and more time surviving.**

@@ -20,7 +20,7 @@ FEATURES
 DEFAULT SANDBOX SETTINGS
 - Clothing washing time: 0.5 (50% of normal duration).
 - Washing-yourself time: 0.5 (50% of normal duration).
-- Solid soap consumption: 0.2 (20% of normal consumption).
+- Solid soap consumption: 0.02 (2% of normal consumption).
 - CleaningLiquid consumption: 0.02 (2% of normal consumption).
 
 CONFIGURATION RANGES
@@ -31,7 +31,7 @@ SCOPE
 - The CleaningLiquid reduction applies to washing clothing.
 - The solid-soap reduction applies to the supported washing actions patched
   by the mod.
-- Duration multipliers are patched in shared Lua so client and server use the same timed-action duration in multiplayer. Full multiplayer gameplay testing is still recommended.
+- Duration and consumption patches are loaded from shared Lua so client and server install the same logic in multiplayer. Full multiplayer gameplay testing is still recommended.
 
 INSTALLATION
 1. Subscribe to the mod on Steam Workshop, or extract this folder into:

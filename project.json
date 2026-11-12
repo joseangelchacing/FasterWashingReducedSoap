@@ -1,16 +1,18 @@
 {
     "$schema": "https://raw.githubusercontent.com/escapepz/pzstudio/refs/heads/42.20.0/pzstudio.schema.json",
     "workshop": {
-        "title": "Faster Washing Reduced & Soap - Pick It Up",
-        "visibility": "unlisted",
+        "id": 3835601428,
+        "title": "Faster Washing & Reduced Soap Consumption [B42]",
+        "description": "[h1]Faster Washing & Reduced Soap Consumption [B42][/h1]\n\n[b]The apocalypse is bad enough. You don't need to spend half your day washing your clothes.[/b]\n\nThis mod lets you configure clothing-washing time, personal-washing time, solid-soap consumption, and liquid-cleaner consumption independently in Sandbox Options.\n\n[b]Default multipliers:[/b]\n\nClothing washing: 0.5x\nPersonal washing: 0.5x\nSolid soap consumption: 0.02x\nLiquid cleaner consumption: 0.02x\n\nNo new items, recipes, crafting systems, or dependencies. Designed for Project Zomboid Build 42.22.2.\n\nCreated by Chapin.",
+        "visibility": "public",
         "tags": [
             "Build 42"
         ]
     },
     "mods": {
         "fasterwashingreducedsoap": {
-            "name": "Faster Washing Reduced & Soap - Pick It Up",
-            "description": ""
+            "name": "Faster Washing & Reduced Soap Consumption [B42]",
+            "description": "Configurable faster clothing and personal washing, with reduced solid soap and cleaning-liquid consumption. Project Zomboid Build 42.22.2."
         }
     },
     "excludes": []

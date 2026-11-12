@@ -5,7 +5,7 @@
   "Sandbox_FasterWashingReducedSoap_MyselfWashTimeMultiplier": "Washing-yourself time multiplier",
   "Sandbox_FasterWashingReducedSoap_MyselfWashTimeMultiplier_tooltip": "Multiplies the duration of washing the character. 0.5 = half the time; 1.0 = normal time (vanilla); 2.0 = double the time. Does not change water or soap consumption.",
   "Sandbox_FasterWashingReducedSoap_SoapConsumptionMultiplier": "Soap consumption multiplier",
-  "Sandbox_FasterWashingReducedSoap_SoapConsumptionMultiplier_tooltip": "Multiplies solid soap consumption. 0.2 = uses 20%% of the normal amount and makes soap last approximately 5 times longer; 1.0 = normal consumption (vanilla).",
+  "Sandbox_FasterWashingReducedSoap_SoapConsumptionMultiplier_tooltip": "Multiplies solid soap consumption. 0.02 = uses 2%% of the normal amount and makes soap last approximately 50 times longer; 1.0 = normal consumption (vanilla).",
   "Sandbox_FasterWashingReducedSoap_CleaningLiquidConsumptionMultiplier": "Cleaning liquid consumption multiplier",
   "Sandbox_FasterWashingReducedSoap_CleaningLiquidConsumptionMultiplier_tooltip": "Multiplies CleaningLiquid consumption when washing clothing. 0.02 = uses 2%% of the normal amount; 1.0 = normal consumption (vanilla)."
 }

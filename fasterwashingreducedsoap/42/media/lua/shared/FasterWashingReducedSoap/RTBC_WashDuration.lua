@@ -9,6 +9,7 @@
 --
 -- Sandbox multipliers are read when getDuration() is called, not at load time.
 
+require "FasterWashingReducedSoap/RTBC_Diagnostics"
 require "TimedActions/ISWashClothing"
 require "TimedActions/ISWashYourself"
 
@@ -36,11 +37,12 @@ end
 
 local function patchClothingWashDuration()
     if not ISWashClothing or type(ISWashClothing.getDuration) ~= "function" then
-        print("[Faster Washing & Reduced Soap] ERROR: ISWashClothing.getDuration was not found.")
+        FasterWashingReducedSoap.log("ERROR", "ISWashClothing.getDuration was not found.")
         return
     end
 
     if ISWashClothing._RTBC_WashDurationPatched then
+        FasterWashingReducedSoap.log("PATCH", "Clothing duration patch already installed; skipping duplicate.")
         return
     end
 
@@ -51,6 +53,11 @@ local function patchClothingWashDuration()
 
         -- Preserve vanilla instant/debug actions and non-positive durations.
         if type(originalDuration) ~= "number" or originalDuration <= 1 then
+            FasterWashingReducedSoap.log("DURATION", string.format(
+                "clothing action item=%s original=%s result=unchanged (instant/non-positive/non-number)",
+                FasterWashingReducedSoap.describeItem(self.item),
+                FasterWashingReducedSoap.formatValue(originalDuration)
+            ))
             return originalDuration
         end
 
@@ -60,23 +67,40 @@ local function patchClothingWashDuration()
                 "ClothingWashTimeMultiplier",
                 DEFAULT_CLOTHING_MULTIPLIER
             )
-            return math.max(1, originalDuration * multiplier)
+            local newDuration = math.max(1, originalDuration * multiplier)
+            FasterWashingReducedSoap.log("DURATION", string.format(
+                "clothing action item=%s original=%s multiplier=%s result=%s",
+                FasterWashingReducedSoap.describeItem(self.item),
+                FasterWashingReducedSoap.formatValue(originalDuration),
+                FasterWashingReducedSoap.formatValue(multiplier),
+                FasterWashingReducedSoap.formatValue(newDuration)
+            ))
+            return newDuration
         end
 
+        FasterWashingReducedSoap.log("DURATION", string.format(
+            "clothing action item=%s original=%s result=unchanged (target is not Clothing)",
+            FasterWashingReducedSoap.describeItem(self.item),
+            FasterWashingReducedSoap.formatValue(originalDuration)
+        ))
         return originalDuration
     end
 
     ISWashClothing._RTBC_WashDurationPatched = true
-    print("[Faster Washing & Reduced Soap] Clothing washing duration multiplier patch loaded (shared client/server).")
+    FasterWashingReducedSoap.log("PATCH", string.format(
+        "clothing duration wrapper installed; sandbox multiplier=%s",
+        FasterWashingReducedSoap.formatValue(getDurationMultiplier("ClothingWashTimeMultiplier", DEFAULT_CLOTHING_MULTIPLIER))
+    ))
 end
 
 local function patchMyselfWashDuration()
     if not ISWashYourself or type(ISWashYourself.getDuration) ~= "function" then
-        print("[Faster Washing & Reduced Soap] ERROR: ISWashYourself.getDuration was not found.")
+        FasterWashingReducedSoap.log("ERROR", "ISWashYourself.getDuration was not found.")
         return
     end
 
     if ISWashYourself._RTBC_MyselfWashDurationPatched then
+        FasterWashingReducedSoap.log("PATCH", "Personal-wash duration patch already installed; skipping duplicate.")
         return
     end
 
@@ -87,6 +111,10 @@ local function patchMyselfWashDuration()
 
         -- Preserve vanilla instant/debug actions and non-positive durations.
         if type(originalDuration) ~= "number" or originalDuration <= 1 then
+            FasterWashingReducedSoap.log("DURATION", string.format(
+                "personal wash original=%s result=unchanged (instant/non-positive/non-number)",
+                FasterWashingReducedSoap.formatValue(originalDuration)
+            ))
             return originalDuration
         end
 
@@ -94,11 +122,21 @@ local function patchMyselfWashDuration()
             "MyselfWashTimeMultiplier",
             DEFAULT_SELF_MULTIPLIER
         )
-        return math.max(1, originalDuration * multiplier)
+        local newDuration = math.max(1, originalDuration * multiplier)
+        FasterWashingReducedSoap.log("DURATION", string.format(
+            "personal wash original=%s multiplier=%s result=%s",
+            FasterWashingReducedSoap.formatValue(originalDuration),
+            FasterWashingReducedSoap.formatValue(multiplier),
+            FasterWashingReducedSoap.formatValue(newDuration)
+        ))
+        return newDuration
     end
 
     ISWashYourself._RTBC_MyselfWashDurationPatched = true
-    print("[Faster Washing & Reduced Soap] Washing-yourself duration multiplier patch loaded (shared client/server).")
+    FasterWashingReducedSoap.log("PATCH", string.format(
+        "personal duration wrapper installed; sandbox multiplier=%s",
+        FasterWashingReducedSoap.formatValue(getDurationMultiplier("MyselfWashTimeMultiplier", DEFAULT_SELF_MULTIPLIER))
+    ))
 end
 
 -- Apply immediately after requiring the vanilla action classes. This ensures

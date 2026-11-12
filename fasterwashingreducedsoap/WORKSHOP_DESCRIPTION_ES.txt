@@ -39,7 +39,7 @@ Modifica cada multiplicador individualmente y configura la experiencia de lavado
 |---|---:|
 | Tiempo de lavado de ropa | 0.5x | 
 | Tiempo de lavado personal | 0.5x | 
-| Consumo de jabón sólido | 0.2x |  
+| Consumo de jabón sólido | 0.02x |  
 | Consumo de limpiador líquido | 0.02x | 
 
 TODOS los valores SE PUEDEN MODIFICAR desde el menú de Sandbox Options
@@ -49,8 +49,8 @@ TODOS los valores SE PUEDEN MODIFICAR desde el menú de Sandbox Options
 - No añade nuevos objetos, recetas ni sistemas de fabricación.
 - No necesita dependencias adicionales.
 - Se centra en las mecánicas de lavado existentes en el juego vanilla.
-- Aplica los multiplicadores de duración en Lua compartido entre cliente y servidor para sincronizar el multijugador.
-- Diseñado para Project Zomboid Build 42.21.
+- Carga la lógica de duración y consumo de jabón en Lua compartido entre cliente y servidor para mantener el mismo comportamiento en multijugador.
+- Diseñado para Project Zomboid Build 42.22.2.
 
 **Recoge el jabón. Ahorra suministros. Pasa menos tiempo frotando y más tiempo sobreviviendo.**
 
