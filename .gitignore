@@ -1,6 +1,9 @@
 .libraries/*
 !.libraries
 
+# Development type definitions
+.types/
+
 .tmp
 .template-mod
 .template-language
